@@ -7,6 +7,7 @@ To start your Phoenix app:
   * Install Node.js dependencies with `npm install`
   * Start Phoenix endpoint with `mix phoenix.server`
   * Generate resource `mix phoenix.gen.html Video videos user_id:references:users url:string title:string description:text`
+  * Populate database with seeds `mix run priv/repo/seeds.exs`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
