@@ -8,8 +8,8 @@ defmodule Rumbl do
 
     children = [
       supervisor(Rumbl.Endpoint, []),
-      supervisor(Rumbl.Repo, []),
-      worker(Rumbl.Counter, [5]), # new counter worker
+      supervisor(Rumbl.InfoSys.Supervisor, []),
+      supervisor(Rumbl.Repo, [])
     ]
 
     opts = [strategy: :one_for_one, name: Rumbl.Supervisor]
